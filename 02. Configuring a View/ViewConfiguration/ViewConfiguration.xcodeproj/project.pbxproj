@@ -15,6 +15,11 @@
 		2C4130D028532C57009BC8E5 /* ModifierOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4130CF28532C57009BC8E5 /* ModifierOrderView.swift */; };
 		2C8BC290285330E2003C0D1A /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BC28F285330E2003C0D1A /* ImageView.swift */; };
 		2C8BC29228533B34003C0D1A /* SFSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BC29128533B34003C0D1A /* SFSymbolView.swift */; };
+		2CC4BE35285478AF004178C2 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4BE34285478AF004178C2 /* StackView.swift */; };
+		2CC4BE37285480A5004178C2 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4BE36285480A5004178C2 /* SpacerView.swift */; };
+		2CC4BE39285485B9004178C2 /* CombinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4BE38285485B9004178C2 /* CombinationView.swift */; };
+		2CC4BE3B28548854004178C2 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4BE3A28548854004178C2 /* OverlayView.swift */; };
+		2CC4BE3D28548C12004178C2 /* JoystickStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4BE3C28548C12004178C2 /* JoystickStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		2C4130CF28532C57009BC8E5 /* ModifierOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierOrderView.swift; sourceTree = "<group>"; };
 		2C8BC28F285330E2003C0D1A /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		2C8BC29128533B34003C0D1A /* SFSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolView.swift; sourceTree = "<group>"; };
+		2CC4BE34285478AF004178C2 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		2CC4BE36285480A5004178C2 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
+		2CC4BE38285485B9004178C2 /* CombinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationView.swift; sourceTree = "<group>"; };
+		2CC4BE3A28548854004178C2 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		2CC4BE3C28548C12004178C2 /* JoystickStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,11 @@
 				2C4130CF28532C57009BC8E5 /* ModifierOrderView.swift */,
 				2C8BC28F285330E2003C0D1A /* ImageView.swift */,
 				2C8BC29128533B34003C0D1A /* SFSymbolView.swift */,
+				2CC4BE34285478AF004178C2 /* StackView.swift */,
+				2CC4BE36285480A5004178C2 /* SpacerView.swift */,
+				2CC4BE38285485B9004178C2 /* CombinationView.swift */,
+				2CC4BE3A28548854004178C2 /* OverlayView.swift */,
+				2CC4BE3C28548C12004178C2 /* JoystickStackView.swift */,
 				2C4130C328531DA0009BC8E5 /* Assets.xcassets */,
 				2C4130C528531DA0009BC8E5 /* Preview Content */,
 			);
@@ -153,8 +168,13 @@
 				2C4130D028532C57009BC8E5 /* ModifierOrderView.swift in Sources */,
 				2C4130CE285327E5009BC8E5 /* TextView.swift in Sources */,
 				2C4130C228531D9F009BC8E5 /* ContentView.swift in Sources */,
+				2CC4BE39285485B9004178C2 /* CombinationView.swift in Sources */,
+				2CC4BE37285480A5004178C2 /* SpacerView.swift in Sources */,
 				2C4130C028531D9F009BC8E5 /* ViewConfigurationApp.swift in Sources */,
+				2CC4BE35285478AF004178C2 /* StackView.swift in Sources */,
 				2C8BC29228533B34003C0D1A /* SFSymbolView.swift in Sources */,
+				2CC4BE3D28548C12004178C2 /* JoystickStackView.swift in Sources */,
+				2CC4BE3B28548854004178C2 /* OverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

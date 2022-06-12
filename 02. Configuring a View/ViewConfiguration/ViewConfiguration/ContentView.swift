@@ -12,7 +12,12 @@ struct ContentView: View {
 //        TextView()
 //        ModifierOrderView()
 //        ImageView()
-        SFSymbolView()
+//        SFSymbolView()
+//        StackView()
+//        SpacerView()
+//        CombinationView()
+//        OverlayView()
+        JoystickStackView()
     }
 }
 
