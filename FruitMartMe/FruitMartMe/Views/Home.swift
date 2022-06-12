@@ -9,12 +9,15 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            ProductItem()
+            ProductItem()
+            ProductItem()
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
     }
