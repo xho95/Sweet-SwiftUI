@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Home.swift
 //  FruitMartMe
 //
 //  Created by Min Ho Kim on 2022/06/12.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Home: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
@@ -16,6 +16,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Home()
     }
 }
