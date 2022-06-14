@@ -10,9 +10,15 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         VStack {
-            ProductItem()
-            ProductItem()
-            ProductItem()
+            ProductItem(product: productsSamples[0])
+            ProductItem(product: productsSamples[1])
+            ProductItem(product: productsSamples[2])
+
+            if Int.random(in: 0...1) == 0 {
+                Rectangle()
+            } else {
+                Circle()
+            }
         }
     }
 }

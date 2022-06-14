@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProductItem: View {
+    let product: Product
+    
     var body: some View {
         HStack {
             productImage
@@ -24,7 +26,7 @@ struct ProductItem: View {
 
 private extension ProductItem {
     var productImage: some View {
-        Image("apple")
+        Image(product.imageName)
             .resizable()
             .scaledToFill()
             .frame(width: 140)
@@ -33,12 +35,12 @@ private extension ProductItem {
     
     var productDescription: some View {
         VStack(alignment: .leading) {
-            Text("Snow White Apple")
+            Text(product.name)
                 .font(.headline)
                 .fontWeight(.medium)
                 .padding(.bottom, 6)
             
-            Text("Sweet and delicious apple for Queen. Full of honey without poison!")
+            Text(product.description)
                 .font(.footnote)
                 .foregroundColor(.secondaryText)
             
@@ -52,7 +54,7 @@ private extension ProductItem {
     
     var footer: some View {
         HStack(spacing: 0) {
-            Text("$").font(.footnote) + Text("2100").font(.headline)
+            Text("$").font(.footnote) + Text("\(product.price)").font(.headline)
             
             Spacer()
             
@@ -71,6 +73,6 @@ private extension ProductItem {
 
 struct ProductItem_Previews: PreviewProvider {
     static var previews: some View {
-        ProductItem()
+        ProductItem(product: productsSamples[0])
     }
 }
