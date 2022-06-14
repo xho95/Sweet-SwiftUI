@@ -13,12 +13,6 @@ struct Home: View {
             ProductItem(product: productsSamples[0])
             ProductItem(product: productsSamples[1])
             ProductItem(product: productsSamples[2])
-
-            if Int.random(in: 0...1) == 0 {
-                Rectangle()
-            } else {
-                Circle()
-            }
         }
     }
 }
