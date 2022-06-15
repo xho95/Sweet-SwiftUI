@@ -12,7 +12,9 @@ struct BasicApp: App {
     var body: some Scene {
         WindowGroup {
 //            ButtonView()
-            NavigationSystem()
+//            StackNavigate()
+//            MasterDetailNavigate()
+            ListView()
         }
     }
 }

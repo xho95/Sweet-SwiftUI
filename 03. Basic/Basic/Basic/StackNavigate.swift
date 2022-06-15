@@ -1,5 +1,5 @@
 //
-//  NavigationSystem.swift
+//  StackNavigate.swift
 //  Basic
 //
 //  Created by Min Ho Kim on 2022/06/14.
@@ -7,25 +7,32 @@
 
 import SwiftUI
 
-struct NavigationSystem: View {
+struct StackNavigate: View {
     var body: some View {
         NavigationView {
-            Image("SwiftUI")
-                .navigationTitle("Navigation Title")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        leadingItem
-                    }
-                    ToolbarItemGroup(placement: .navigationBarTrailing) {
-                        trailingItem
-                    }
+            NavigationLink(destination: destination) {
+                Image("SwiftUI")
+            }
+            .navigationTitle("Navigation Title")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    leadingItem
                 }
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    trailingItem
+                }
+            }
         }
         .navigationViewStyle(.stack)
     }
 }
 
-extension NavigationSystem {
+extension StackNavigate {
+    var destination: some View {
+        Text("Destination View")
+            .navigationBarHidden(true)
+    }
+    
     var leadingItem: some View {
         Button {
             print("Leading item tapped")
@@ -53,8 +60,8 @@ extension NavigationSystem {
     }
 }
 
-struct NavigationSystem_Previews: PreviewProvider {
+struct StackNavigate_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationSystem()
+        StackNavigate()
     }
 }
