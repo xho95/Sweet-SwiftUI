@@ -17,6 +17,12 @@ struct Animal: Identifiable {
 }
 
 struct ListView: View {
+    let fruits = ["Apple", "Pear", "Grape", "Banana"]
+    let drinks = ["Water", "Milk", "Soda"]
+    
+    let titles = ["Fruits", "Drinks"]
+    let data = [["Apple", "Pear", "Grape", "Banana"], ["Water", "Milk", "Soda"]]
+
     var body: some View {
 //        vStackAndList
 //
@@ -125,9 +131,6 @@ extension ListView {
         }
     }
 
-    var fruits: [String] { ["Apple", "Pear", "Grape", "Banana"] }
-    var drinks: [String] { ["Water", "Milk", "Soda"] }
-
     var combinedList: some View {
         List {
             Text("Fruits").font(.largeTitle)
@@ -142,12 +145,10 @@ extension ListView {
         }
     }
     
-    var titles: [String] { ["Fruits", "Drinks"] }
-    var data: [[String]] { [fruits, drinks] }
-    
+    // https://www.hackingwithswift.com/forums/swiftui/compiler-warning-non-constant-range-argument-must-be-an-integer-literal/14878
     var sectionedList: some View {
         List {
-            ForEach(data.indices) { index in
+            ForEach(data.indices, id: \.self) { index in
                 Section(
                     header: Text(titles[index]).font(.title),
                     footer: HStack {

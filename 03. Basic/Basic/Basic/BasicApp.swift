@@ -14,7 +14,8 @@ struct BasicApp: App {
 //            ButtonView()
 //            StackNavigate()
 //            MasterDetailNavigate()
-            ListView()
+//            ListView()
+            GeometryReaderView()
         }
     }
 }

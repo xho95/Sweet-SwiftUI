@@ -14,6 +14,7 @@
 		2CC9740F2858796C0039996F /* StackNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9740E2858796C0039996F /* StackNavigate.swift */; };
 		2CC974112859AE250039996F /* MasterDetailNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC974102859AE250039996F /* MasterDetailNavigate.swift */; };
 		2CC974132859B47C0039996F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC974122859B47C0039996F /* ListView.swift */; };
+		2CC974152859C97D0039996F /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC974142859C97D0039996F /* GeometryReaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		2CC9740E2858796C0039996F /* StackNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackNavigate.swift; sourceTree = "<group>"; };
 		2CC974102859AE250039996F /* MasterDetailNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterDetailNavigate.swift; sourceTree = "<group>"; };
 		2CC974122859B47C0039996F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		2CC974142859C97D0039996F /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				2CC9740E2858796C0039996F /* StackNavigate.swift */,
 				2CC974102859AE250039996F /* MasterDetailNavigate.swift */,
 				2CC974122859B47C0039996F /* ListView.swift */,
+				2CC974142859C97D0039996F /* GeometryReaderView.swift */,
 				2CC9740428586FC90039996F /* Assets.xcassets */,
 				2CC9740628586FC90039996F /* Preview Content */,
 			);
@@ -151,6 +154,7 @@
 				2CC974132859B47C0039996F /* ListView.swift in Sources */,
 				2CC9740328586FC80039996F /* ButtonView.swift in Sources */,
 				2CC9740128586FC80039996F /* BasicApp.swift in Sources */,
+				2CC974152859C97D0039996F /* GeometryReaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
