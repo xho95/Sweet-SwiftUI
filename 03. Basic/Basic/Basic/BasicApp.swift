@@ -15,7 +15,11 @@ struct BasicApp: App {
 //            StackNavigate()
 //            MasterDetailNavigate()
 //            ListView()
-            GeometryReaderView()
+//            GeometryReaderView()
+//            CoordinateSpaceView()
+//            FrameView()
+//            SizeView()
+            LayoutPriorityView()
         }
     }
 }
