@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct Home: View {
+    let store: Store
+    
     var body: some View {
-        VStack {
-            ProductItem(product: productsSamples[0])
-            ProductItem(product: productsSamples[1])
-            ProductItem(product: productsSamples[2])
+        NavigationView {
+            List(store.products, id: \.name) { product in
+                NavigationLink(destination: ProductItemDetail(product: product)) {
+                    ProductItem(product: product)
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Fruit Mart")
         }
+        .navigationViewStyle(.stack)
     }
 }
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Home(store: Store())
     }
 }

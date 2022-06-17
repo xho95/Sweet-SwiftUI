@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1C3CD7285C6479002E253A /* ProductItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C3CD6285C6479002E253A /* ProductItemDetail.swift */; };
+		2C3629BA285C54AD00527901 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3629B9285C54AD00527901 /* Bundle+decode.swift */; };
+		2C3629BC285C562600527901 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3629BB285C562600527901 /* Store.swift */; };
+		2C3629BE285C575000527901 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C3629BD285C575000527901 /* ProductData.json */; };
 		2CC973DC2855D1760039996F /* FruitMartMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC973DB2855D1760039996F /* FruitMartMeApp.swift */; };
 		2CC973DE2855D1760039996F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC973DD2855D1760039996F /* Home.swift */; };
 		2CC973E02855D1770039996F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC973DF2855D1770039996F /* Assets.xcassets */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1C3CD6285C6479002E253A /* ProductItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemDetail.swift; sourceTree = "<group>"; };
+		2C3629B9285C54AD00527901 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
+		2C3629BB285C562600527901 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		2C3629BD285C575000527901 /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
 		2CC973D82855D1760039996F /* FruitMartMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMartMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC973DB2855D1760039996F /* FruitMartMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitMartMeApp.swift; sourceTree = "<group>"; };
 		2CC973DD2855D1760039996F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -38,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3629B8285C51E700527901 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CC973F02855DD9C0039996F /* Color+custom.swift */,
+				2C3629B9285C54AD00527901 /* Bundle+decode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2CC973CF2855D1760039996F = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +76,9 @@
 			children = (
 				2CC973EB2855D2160039996F /* App */,
 				2CC973EC2855D2560039996F /* Resources */,
+				2CC973EF2855DD720039996F /* Utilities */,
 				2CC973EA2855D2020039996F /* Models */,
 				2CC973E92855D1F80039996F /* Views */,
-				2CC973EF2855DD720039996F /* Utilities */,
 				2CC973E12855D1770039996F /* Preview Content */,
 			);
 			path = FruitMartMe;
@@ -80,6 +97,7 @@
 			children = (
 				2CC973DD2855D1760039996F /* Home.swift */,
 				2CC973ED2855DB6B0039996F /* ProductItem.swift */,
+				2C1C3CD6285C6479002E253A /* ProductItemDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				2CC973F22858624E0039996F /* Product.swift */,
+				2C3629BB285C562600527901 /* Store.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				2CC973DF2855D1770039996F /* Assets.xcassets */,
+				2C3629BD285C575000527901 /* ProductData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -111,7 +131,7 @@
 		2CC973EF2855DD720039996F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2CC973F02855DD9C0039996F /* Color+custom.swift */,
+				2C3629B8285C51E700527901 /* Extensions */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -176,6 +196,7 @@
 			files = (
 				2CC973E32855D1770039996F /* Preview Assets.xcassets in Resources */,
 				2CC973E02855D1770039996F /* Assets.xcassets in Resources */,
+				2C3629BE285C575000527901 /* ProductData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,9 +207,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3629BC285C562600527901 /* Store.swift in Sources */,
 				2CC973EE2855DB6B0039996F /* ProductItem.swift in Sources */,
+				2C3629BA285C54AD00527901 /* Bundle+decode.swift in Sources */,
 				2CC973DE2855D1760039996F /* Home.swift in Sources */,
 				2CC973F32858624E0039996F /* Product.swift in Sources */,
+				2C1C3CD7285C6479002E253A /* ProductItemDetail.swift in Sources */,
 				2CC973F12855DD9C0039996F /* Color+custom.swift in Sources */,
 				2CC973DC2855D1760039996F /* FruitMartMeApp.swift in Sources */,
 			);

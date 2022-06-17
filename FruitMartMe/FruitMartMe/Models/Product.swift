@@ -7,13 +7,17 @@
 
 import Foundation
 
-struct Product {
+struct Product: Codable, Identifiable {
+    let id = UUID()
     let name: String
     let imageName: String
     let price: Int
     let description: String
-    
+
     var isFavorite: Bool = false
+
+    // CodingKeys without id
+    private enum CodingKeys: String, CodingKey { case name, imageName, price, description, isFavorite }
 }
 
 let productsSamples = [
