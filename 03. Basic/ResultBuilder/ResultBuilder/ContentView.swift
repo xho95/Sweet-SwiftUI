@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EvenNumber var numbers: [Int] {
-        1
-        2
-        3
-        4
+    @EvenNumber var naturals: [Int] {
+        1; 2; 3; 4; 5; 6
+    }
+    
+    @EvenNumber var anotherNaturals: [Int] {
+        [1, 2, 3, 4, 5, 6]
     }
     
     var body: some View {
@@ -23,8 +24,15 @@ struct ContentView: View {
                 .font(.title)
             Rectangle()
                 .frame(width: 250, height: 40)
-            ForEach(0..<numbers.count) { index in
-                Text("\(numbers[index])")
+            HStack {
+                ForEach(naturals.indices, id: \.self) { index in
+                    Text("\(naturals[index])")
+                }
+            }
+            HStack {
+                ForEach(anotherNaturals.indices, id: \.self) { index in
+                    Text("\(anotherNaturals[index])")
+                }
             }
         }
     }
