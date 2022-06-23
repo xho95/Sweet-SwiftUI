@@ -111,7 +111,13 @@ extension ProductItemDetail {
 }
 
 struct ProductItemDetail_Previews: PreviewProvider {
+    static let source1 = ProductItemDetail(product: productsSamples[0])
+    static let source2 = ProductItemDetail(product: productsSamples[1])
+    
     static var previews: some View {
-        ProductItemDetail(product: productsSamples[0])
+        Group {
+            Preview(source: source1)
+            Preview(source: source2, devices: [.iPhone13Pro], isDarkMode: false)
+        }
     }
 }

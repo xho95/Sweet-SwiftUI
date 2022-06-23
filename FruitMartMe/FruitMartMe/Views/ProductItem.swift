@@ -73,6 +73,15 @@ private extension ProductItem {
 
 struct ProductItem_Previews: PreviewProvider {
     static var previews: some View {
-        ProductItem(product: productsSamples[0])
+        Group {
+            ForEach(productsSamples) {
+                ProductItem(product: $0)
+            }
+            
+            ProductItem(product: productsSamples[0])
+                .preferredColorScheme(.dark)
+        }
+        .padding()
+        .previewLayout(.sizeThatFits)
     }
 }

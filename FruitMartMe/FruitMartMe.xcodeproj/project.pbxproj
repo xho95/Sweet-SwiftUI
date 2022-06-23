@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C1C3CD7285C6479002E253A /* ProductItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C3CD6285C6479002E253A /* ProductItemDetail.swift */; };
+		2C1C3D1828644BA1002E253A /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C3D1728644BA1002E253A /* Preview.swift */; };
 		2C3629BA285C54AD00527901 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3629B9285C54AD00527901 /* Bundle+decode.swift */; };
 		2C3629BC285C562600527901 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3629BB285C562600527901 /* Store.swift */; };
 		2C3629BE285C575000527901 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C3629BD285C575000527901 /* ProductData.json */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		2C1C3CD6285C6479002E253A /* ProductItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemDetail.swift; sourceTree = "<group>"; };
+		2C1C3D1728644BA1002E253A /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		2C3629B9285C54AD00527901 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
 		2C3629BB285C562600527901 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		2C3629BD285C575000527901 /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1C3D1628644A2B002E253A /* Previews */ = {
+			isa = PBXGroup;
+			children = (
+				2C1C3D1728644BA1002E253A /* Preview.swift */,
+			);
+			path = Previews;
+			sourceTree = "<group>";
+		};
 		2C3629B8285C51E700527901 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				2C3629B8285C51E700527901 /* Extensions */,
+				2C1C3D1628644A2B002E253A /* Previews */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 				2CC973F32858624E0039996F /* Product.swift in Sources */,
 				2C1C3CD7285C6479002E253A /* ProductItemDetail.swift in Sources */,
 				2CC973F12855DD9C0039996F /* Color+custom.swift in Sources */,
+				2C1C3D1828644BA1002E253A /* Preview.swift in Sources */,
 				2CC973DC2855D1760039996F /* FruitMartMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
