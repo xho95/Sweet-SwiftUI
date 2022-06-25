@@ -18,6 +18,7 @@ struct ContentView: View {
     @State private var isShowingAlert = false
     @State private var isShowingDialog = false
     @State private var isShowingSheet = false
+    @State private var isShowingPopOver = false
 
     var body: some View {
         VStack {
@@ -28,10 +29,7 @@ struct ContentView: View {
                 
                 Stepper("Count: \(count)", value: $count)
             }
-            .padding()
-            .background(.gray.opacity(0.2))
-            .cornerRadius(10)
-            .padding(.horizontal)
+            .grayBackground()
             
             VStack(spacing: 30) {
                 Text(user.name)
@@ -42,47 +40,42 @@ struct ContentView: View {
                     Text(user.score.description)
                 }
             }
-            .padding()
-            .background(.gray.opacity(0.2))
-            .cornerRadius(10)
-            .padding(.horizontal)
+            .grayBackground()
 
             SuperView()
                 .environmentObject(User())
-                .padding()
-                .background(.gray.opacity(0.2))
-                .cornerRadius(10)
-                .padding(.horizontal)
+                .grayBackground()
 
             Button {
                 isShowingAlert = true
             } label: {
                 Text("Alert")
             }
-            .padding()
-            .background(.gray.opacity(0.2))
-            .cornerRadius(10)
-            .padding(.horizontal)
+            .grayBackground()
 
             Button {
                 isShowingDialog = true
             } label: {
                 Text("Dialog")
             }
-            .padding()
-            .background(.gray.opacity(0.2))
-            .cornerRadius(10)
-            .padding(.horizontal)
+            .grayBackground()
 
             Button {
                 isShowingSheet = true
             } label: {
                 Text("Sheet").font(.title).foregroundColor(.blue)
             }
-            .padding()
-            .background(.gray.opacity(0.2))
-            .cornerRadius(10)
-            .padding(.horizontal)
+            .grayBackground()
+
+            Button {
+                isShowingPopOver = true
+            } label: {
+                Text("Pop Over").font(.largeTitle)
+            }
+            .grayBackground()
+            .popover(isPresented: $isShowingPopOver) {
+                PopOverView(isShowingPopOver: $isShowingPopOver)
+            }
         }
         .alert(isPresented: $isShowingAlert) {
             Alert(title: Text("Title"),
@@ -96,8 +89,6 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $isShowingSheet) {
-            print("Dismissed")
-        } content: {
             SheetView(isShowingSheet: $isShowingSheet)
         }
     }

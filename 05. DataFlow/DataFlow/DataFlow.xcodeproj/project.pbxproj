@@ -15,6 +15,8 @@
 		2C1C3D5228659EE7002E253A /* SuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C3D5128659EE7002E253A /* SuperView.swift */; };
 		2C1C3D5428659EFC002E253A /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C3D5328659EFC002E253A /* SubView.swift */; };
 		2C1C3D562865AD8E002E253A /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C3D552865AD8E002E253A /* SheetView.swift */; };
+		2C1C3D582866FA44002E253A /* View+grayBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C3D572866FA44002E253A /* View+grayBackground.swift */; };
+		2C1C3D5A2866FB98002E253A /* PopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C3D592866FB98002E253A /* PopOverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		2C1C3D5128659EE7002E253A /* SuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperView.swift; sourceTree = "<group>"; };
 		2C1C3D5328659EFC002E253A /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		2C1C3D552865AD8E002E253A /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		2C1C3D572866FA44002E253A /* View+grayBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+grayBackground.swift"; sourceTree = "<group>"; };
+		2C1C3D592866FB98002E253A /* PopOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,14 @@
 		2C1C3D4028656797002E253A /* DataFlow */ = {
 			isa = PBXGroup;
 			children = (
+				2C1C3D572866FA44002E253A /* View+grayBackground.swift */,
 				2C1C3D4128656797002E253A /* DataFlowApp.swift */,
 				2C1C3D4F286593DD002E253A /* User.swift */,
 				2C1C3D4328656797002E253A /* ContentView.swift */,
 				2C1C3D5128659EE7002E253A /* SuperView.swift */,
 				2C1C3D5328659EFC002E253A /* SubView.swift */,
 				2C1C3D552865AD8E002E253A /* SheetView.swift */,
+				2C1C3D592866FB98002E253A /* PopOverView.swift */,
 				2C1C3D4528656798002E253A /* Assets.xcassets */,
 				2C1C3D4728656798002E253A /* Preview Content */,
 			);
@@ -151,8 +157,10 @@
 			files = (
 				2C1C3D5228659EE7002E253A /* SuperView.swift in Sources */,
 				2C1C3D4428656797002E253A /* ContentView.swift in Sources */,
+				2C1C3D5A2866FB98002E253A /* PopOverView.swift in Sources */,
 				2C1C3D4228656797002E253A /* DataFlowApp.swift in Sources */,
 				2C1C3D50286593DD002E253A /* User.swift in Sources */,
+				2C1C3D582866FA44002E253A /* View+grayBackground.swift in Sources */,
 				2C1C3D562865AD8E002E253A /* SheetView.swift in Sources */,
 				2C1C3D5428659EFC002E253A /* SubView.swift in Sources */,
 			);
