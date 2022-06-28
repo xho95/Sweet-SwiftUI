@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProductItemDetail: View {
+    @State private var quantity = 1
+    
     let product: Product
     
     var body: some View {
@@ -59,10 +61,7 @@ extension ProductItemDetail {
                 
                 Spacer()
                 
-                Image(systemName: "heart")
-                    .imageScale(.large)
-                    .foregroundColor(.peach)
-                    .frame(width: 32, height: 32)
+                FavoriteButton(product: product)
             }
             
             Text(product.description)
@@ -73,11 +72,15 @@ extension ProductItemDetail {
     }
     
     var priceInfo: some View {
-        Group {
-            (Text("W") + Text("\(product.price)").font(.title))
+        let price = quantity * product.price
+        
+        return HStack {
+            (Text("W") + Text("\(price)").font(.title))
                 .fontWeight(.medium)
             
-//            Spacer()
+            Spacer()
+            
+            QuantitySelector(quantity: $quantity)
         }
         .foregroundColor(.black)
     }
