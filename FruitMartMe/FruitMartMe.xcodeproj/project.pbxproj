@@ -14,6 +14,7 @@
 		2C3629BA285C54AD00527901 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3629B9285C54AD00527901 /* Bundle+decode.swift */; };
 		2C3629BC285C562600527901 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3629BB285C562600527901 /* Store.swift */; };
 		2C3629BE285C575000527901 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C3629BD285C575000527901 /* ProductData.json */; };
+		2CA56929286D84B5000CB0EF /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA56928286D84B5000CB0EF /* Order.swift */; };
 		2CC973DC2855D1760039996F /* FruitMartMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC973DB2855D1760039996F /* FruitMartMeApp.swift */; };
 		2CC973DE2855D1760039996F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC973DD2855D1760039996F /* Home.swift */; };
 		2CC973E02855D1770039996F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC973DF2855D1770039996F /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		2C3629B9285C54AD00527901 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
 		2C3629BB285C562600527901 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		2C3629BD285C575000527901 /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
+		2CA56928286D84B5000CB0EF /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2CC973D82855D1760039996F /* FruitMartMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMartMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC973DB2855D1760039996F /* FruitMartMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitMartMeApp.swift; sourceTree = "<group>"; };
 		2CC973DD2855D1760039996F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				2CC973F22858624E0039996F /* Product.swift */,
 				2C3629BB285C562600527901 /* Store.swift */,
+				2CA56928286D84B5000CB0EF /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				2CC973DE2855D1760039996F /* Home.swift in Sources */,
 				2CC973F32858624E0039996F /* Product.swift in Sources */,
 				2C1C3CD7285C6479002E253A /* ProductItemDetail.swift in Sources */,
+				2CA56929286D84B5000CB0EF /* Order.swift in Sources */,
 				2CC973F12855DD9C0039996F /* Color+custom.swift in Sources */,
 				2C1C3D5C286AE4F2002E253A /* QuantitySelector.swift in Sources */,
 				2C1C3D1828644BA1002E253A /* Preview.swift in Sources */,

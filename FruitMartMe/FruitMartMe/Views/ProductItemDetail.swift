@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ProductItemDetail: View {
+    @EnvironmentObject private var store: Store
+
     @State private var quantity = 1
-    
+    @State private var isShowingAlert = false
+
     let product: Product
     
     var body: some View {
@@ -19,6 +22,9 @@ struct ProductItemDetail: View {
             orderInfo
         }
         .ignoresSafeArea(edges: .top)
+        .alert(isPresented: $isShowingAlert) {
+            confirmAlert
+        }
     }
 }
 
@@ -87,7 +93,7 @@ extension ProductItemDetail {
     
     var orderButton: some View {
         Button {
-            //
+            isShowingAlert = true
         } label: {
             Capsule()
                 .fill(Color.peach)
@@ -100,6 +106,17 @@ extension ProductItemDetail {
         .padding(.bottom, 20)
     }
     
+    var confirmAlert: Alert {
+        Alert(
+            title: Text("Confirm Order"),
+            message: Text("Would you like to purchase \(quantity) \(product.name)" + "\(quantity == 1 ? "?" : "s?")"),
+            primaryButton: .default(Text("OK"), action: {
+                placeOrder()
+            }),
+            secondaryButton: .cancel(Text("Cancel"))
+        )
+    }
+    
     func split(text: String) -> String {
         guard !text.isEmpty else { return text }
         
@@ -110,6 +127,10 @@ extension ProductItemDetail {
         let rightString = text[afterSpaceIndex...].trimmingCharacters(in: .whitespaces)
         
         return String(leftString + "\n" + rightString)
+    }
+    
+    func placeOrder() {
+        store.placeOrder(product: product, quantity: quantity)
     }
 }
 
