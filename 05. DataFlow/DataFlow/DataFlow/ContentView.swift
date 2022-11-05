@@ -73,7 +73,7 @@ struct ContentView: View {
                 Text("Pop Over").font(.largeTitle)
             }
             .grayBackground()
-            .popover(isPresented: $isShowingPopOver) {
+            .popover(isPresented: $isShowingPopOver, attachmentAnchor: .point(.topLeading)) {
                 PopOverView(isShowingPopOver: $isShowingPopOver)
             }
         }
@@ -88,7 +88,7 @@ struct ContentView: View {
                 Button { } label: { Text("Button \(index)") }
             }
         }
-        .sheet(isPresented: $isShowingSheet) {
+        .sheet(isPresented: $isShowingSheet, onDismiss: { print("Dismissed") }) {
             SheetView(isShowingSheet: $isShowingSheet)
         }
     }
