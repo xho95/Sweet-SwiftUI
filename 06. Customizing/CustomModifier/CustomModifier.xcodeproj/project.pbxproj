@@ -11,6 +11,8 @@
 		2C5223B52917A37E007D3624 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5223B42917A37E007D3624 /* ContentView.swift */; };
 		2C5223B72917A37F007D3624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5223B62917A37F007D3624 /* Assets.xcassets */; };
 		2C5223BB2917A37F007D3624 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5223BA2917A37F007D3624 /* Preview Assets.xcassets */; };
+		2C5223C22917A5BC007D3624 /* CustomViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5223C12917A5BC007D3624 /* CustomViewModifier.swift */; };
+		2C5223C42917A80E007D3624 /* ConcatModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5223C32917A80E007D3624 /* ConcatModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		2C5223B62917A37F007D3624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C5223B82917A37F007D3624 /* CustomModifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomModifier.entitlements; sourceTree = "<group>"; };
 		2C5223BA2917A37F007D3624 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C5223C12917A5BC007D3624 /* CustomViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifier.swift; sourceTree = "<group>"; };
+		2C5223C32917A80E007D3624 /* ConcatModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcatModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				2C5223B22917A37E007D3624 /* CustomModifierApp.swift */,
 				2C5223B42917A37E007D3624 /* ContentView.swift */,
+				2C5223C12917A5BC007D3624 /* CustomViewModifier.swift */,
+				2C5223C32917A80E007D3624 /* ConcatModifier.swift */,
 				2C5223B62917A37F007D3624 /* Assets.xcassets */,
 				2C5223B82917A37F007D3624 /* CustomModifier.entitlements */,
 				2C5223B92917A37F007D3624 /* Preview Content */,
@@ -141,6 +147,8 @@
 			files = (
 				2C5223B52917A37E007D3624 /* ContentView.swift in Sources */,
 				2C5223B32917A37E007D3624 /* CustomModifierApp.swift in Sources */,
+				2C5223C42917A80E007D3624 /* ConcatModifier.swift in Sources */,
+				2C5223C22917A5BC007D3624 /* CustomViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

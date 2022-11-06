@@ -14,6 +14,19 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            
+            Text("Custom ViewModifier")
+                .modifier(CustomViewModifier(borderColor: .blue))
+            
+            ModifiedContent(content: Text("Another ViewModifier"),
+                            modifier: CustomViewModifier(borderColor: .blue))
+            
+            Text("Concatenated Modifiers")
+                .modifier(MyModifier1().concat(MyModifier2()))
+
+            Text("Custom ViewModifier")
+                .customModifier(borderColor: .orange)
+            
         }
         .padding()
     }
