@@ -12,7 +12,7 @@ struct MyUserDefault<Value> {
     let key: String
     
     var wrappedValue: Value {
-        get { UserDefaults.standard.bool(forKey: key) as! Value }
+        get { UserDefaults.standard.object(forKey: key) as! Value }     // Not completed!
         set { UserDefaults.standard.set(newValue, forKey: key) }
     }
 }
