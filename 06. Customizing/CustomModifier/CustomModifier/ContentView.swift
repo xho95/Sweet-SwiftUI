@@ -9,26 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            
-            Text("Custom ViewModifier")
-                .modifier(CustomViewModifier(borderColor: .blue))
-            
-            ModifiedContent(content: Text("Another ViewModifier"),
-                            modifier: CustomViewModifier(borderColor: .blue))
-            
-            Text("Concatenated Modifiers")
-                .modifier(MyModifier1().concat(MyModifier2()))
-
-            Text("Custom ViewModifier")
-                .customModifier(borderColor: .orange)
-            
+        TabView {
+            CustomModifierView()
+                .tabItem {
+                    Label("modifier", systemImage: "square.inset.filled")
+                }
+            CustomStyleView()
+                .tabItem {
+                    Label("style", systemImage: "square.filled.on.square")
+                }
+//                AccountView()
+//                    .badge("!")
+//                    .tabItem {
+//                        Label("Account", systemImage: "person.crop.circle.fill")
+//                    }
         }
-        .padding()
     }
 }
 
