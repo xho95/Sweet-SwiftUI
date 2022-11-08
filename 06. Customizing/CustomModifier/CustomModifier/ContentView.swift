@@ -18,11 +18,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("style", systemImage: "square.filled.on.square")
                 }
-//                AccountView()
-//                    .badge("!")
-//                    .tabItem {
-//                        Label("Account", systemImage: "person.crop.circle.fill")
-//                    }
+            CustomAppearanceView()
+                .tabItem {
+                    Label("appearance", systemImage: "eye.square.fill")
+                }
         }
     }
 }

@@ -17,6 +17,7 @@
 		2CD37DC62918E08800FC1D7B /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD37DC52918E08800FC1D7B /* CustomStyleView.swift */; };
 		2CD37DC82918E49500FC1D7B /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD37DC72918E49500FC1D7B /* CustomButtonStyle.swift */; };
 		2CD37DCA2918F6F800FC1D7B /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD37DC92918F6F800FC1D7B /* CustomToggleStyle.swift */; };
+		2CD37DCC291A193700FC1D7B /* CustomAppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD37DCB291A193700FC1D7B /* CustomAppearanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2CD37DC52918E08800FC1D7B /* CustomStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleView.swift; sourceTree = "<group>"; };
 		2CD37DC72918E49500FC1D7B /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		2CD37DC92918F6F800FC1D7B /* CustomToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
+		2CD37DCB291A193700FC1D7B /* CustomAppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppearanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +70,14 @@
 				2C5223B42917A37E007D3624 /* ContentView.swift */,
 				2CD37DC32918DE2300FC1D7B /* CustomModifierView.swift */,
 				2CD37DC52918E08800FC1D7B /* CustomStyleView.swift */,
+				2CD37DCB291A193700FC1D7B /* CustomAppearanceView.swift */,
 				2C5223C12917A5BC007D3624 /* CustomViewModifier.swift */,
 				2C5223C32917A80E007D3624 /* ConcatModifier.swift */,
 				2CD37DC72918E49500FC1D7B /* CustomButtonStyle.swift */,
+				2CD37DC92918F6F800FC1D7B /* CustomToggleStyle.swift */,
 				2C5223B62917A37F007D3624 /* Assets.xcassets */,
 				2C5223B82917A37F007D3624 /* CustomModifier.entitlements */,
 				2C5223B92917A37F007D3624 /* Preview Content */,
-				2CD37DC92918F6F800FC1D7B /* CustomToggleStyle.swift */,
 			);
 			path = CustomModifier;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				2CD37DCA2918F6F800FC1D7B /* CustomToggleStyle.swift in Sources */,
 				2C5223B52917A37E007D3624 /* ContentView.swift in Sources */,
 				2CD37DC42918DE2300FC1D7B /* CustomModifierView.swift in Sources */,
+				2CD37DCC291A193700FC1D7B /* CustomAppearanceView.swift in Sources */,
 				2C5223B32917A37E007D3624 /* CustomModifierApp.swift in Sources */,
 				2CD37DC62918E08800FC1D7B /* CustomStyleView.swift in Sources */,
 				2C5223C42917A80E007D3624 /* ConcatModifier.swift in Sources */,
