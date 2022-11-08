@@ -101,6 +101,7 @@ extension ProductItemDetail {
                 )
                 .padding(.vertical, 8)
         }
+        .buttonStyle(ShrinkButtonStyle())
         .padding(.bottom, 20)
     }
     
