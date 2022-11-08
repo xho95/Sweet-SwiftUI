@@ -19,11 +19,9 @@ struct QuantitySelector: View {
             Button {
                 changeQuantity(with: -1)
             } label: {
-                Image(systemName: "minus.circle.fill")
-                    .imageScale(.large)
+                Symbol("minus.circle.fill", scale: .large, color: Color.gray.opacity(0.5))
                     .padding()
             }
-            .foregroundColor(.gray.opacity(0.5))
             
             Text("\(quantity)")
                 .bold()
@@ -33,11 +31,9 @@ struct QuantitySelector: View {
             Button {
                 changeQuantity(with: +1)
             } label: {
-                Image(systemName: "plus.circle.fill")
-                    .imageScale(.large)
+                Symbol("plus.circle.fill", scale: .large, color: Color.gray.opacity(0.5))
                     .padding()
             }
-            .foregroundColor(.gray.opacity(0.5))
         }
     }
     

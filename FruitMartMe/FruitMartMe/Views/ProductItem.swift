@@ -26,9 +26,7 @@ struct ProductItem: View {
 
 private extension ProductItem {
     var productImage: some View {
-        Image(product.imageName)
-            .resizable()
-            .scaledToFill()
+        ResizedImage(product.imageName)
             .frame(width: 140)
             .clipped()
     }
@@ -60,8 +58,7 @@ private extension ProductItem {
             
             FavoriteButton(product: product)
             
-            Image(systemName: "cart")
-                .foregroundColor(.peach)
+            Symbol("cart", color: .peach)
                 .frame(width: 32, height: 32)
             
         }

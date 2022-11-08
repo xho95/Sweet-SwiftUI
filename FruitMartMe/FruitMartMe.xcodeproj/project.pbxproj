@@ -22,6 +22,8 @@
 		2CC973EE2855DB6B0039996F /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC973ED2855DB6B0039996F /* ProductItem.swift */; };
 		2CC973F12855DD9C0039996F /* Color+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC973F02855DD9C0039996F /* Color+custom.swift */; };
 		2CC973F32858624E0039996F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC973F22858624E0039996F /* Product.swift */; };
+		2CD37DCF291A2B5800FC1D7B /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD37DCE291A2B5800FC1D7B /* Symbol.swift */; };
+		2CD37DD1291A301E00FC1D7B /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD37DD0291A301E00FC1D7B /* ResizedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		2CC973ED2855DB6B0039996F /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
 		2CC973F02855DD9C0039996F /* Color+custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+custom.swift"; sourceTree = "<group>"; };
 		2CC973F22858624E0039996F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2CD37DCE291A2B5800FC1D7B /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		2CD37DD0291A301E00FC1D7B /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,10 +154,20 @@
 		2CC973EF2855DD720039996F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2CD37DCD291A2AA000FC1D7B /* CustomView */,
 				2C3629B8285C51E700527901 /* Extensions */,
 				2C1C3D1628644A2B002E253A /* Previews */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2CD37DCD291A2AA000FC1D7B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2CD37DCE291A2B5800FC1D7B /* Symbol.swift */,
+				2CD37DD0291A301E00FC1D7B /* ResizedImage.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +246,10 @@
 				2C3629BA285C54AD00527901 /* Bundle+decode.swift in Sources */,
 				2CC973DE2855D1760039996F /* Home.swift in Sources */,
 				2CC973F32858624E0039996F /* Product.swift in Sources */,
+				2CD37DCF291A2B5800FC1D7B /* Symbol.swift in Sources */,
 				2C1C3CD7285C6479002E253A /* ProductItemDetail.swift in Sources */,
 				2CA56929286D84B5000CB0EF /* Order.swift in Sources */,
+				2CD37DD1291A301E00FC1D7B /* ResizedImage.swift in Sources */,
 				2CC973F12855DD9C0039996F /* Color+custom.swift in Sources */,
 				2C1C3D5C286AE4F2002E253A /* QuantitySelector.swift in Sources */,
 				2C1C3D1828644BA1002E253A /* Preview.swift in Sources */,
