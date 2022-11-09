@@ -23,7 +23,7 @@ struct Home: View {
             .listStyle(.plain)
             .navigationTitle("Fruit Mart")
         }
-        .popup(item: $quickOrder, style: .dimmed, content: popupMessage(product:))
+        .popupOverContext(item: $quickOrder, style: .dimmed, content: popupMessage(product:))
         .navigationViewStyle(.stack)
     }
 }
