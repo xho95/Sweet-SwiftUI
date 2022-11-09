@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProductItem: View {
+    @EnvironmentObject var store: Store
+    @Binding var quickOrder: Product?
+    
     let product: Product
     
     var body: some View {
@@ -60,8 +63,17 @@ private extension ProductItem {
             
             Symbol("cart", color: .peach)
                 .frame(width: 32, height: 32)
+                .onTapGesture {
+                    self.orderProduct()
+                }
             
         }
+    }
+    
+    func orderProduct() {
+        quickOrder = product
+        store.placeOrder(product: product, quantity: 1)
+        
     }
 }
 
@@ -69,10 +81,10 @@ struct ProductItem_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ForEach(productsSamples) {
-                ProductItem(product: $0)
+                ProductItem(quickOrder: .constant(nil), product: $0)
             }
             
-            ProductItem(product: productsSamples[0])
+            ProductItem(quickOrder: .constant(nil), product: productsSamples[0])
                 .preferredColorScheme(.dark)
         }
         .padding()

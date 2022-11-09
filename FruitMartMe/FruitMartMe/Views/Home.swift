@@ -9,19 +9,37 @@ import SwiftUI
 
 struct Home: View {
     @EnvironmentObject private var store: Store
+
+    @State private var quickOrder: Product?
     
     var body: some View {
         NavigationView {
             List(store.products, id: \.name) { product in
                 NavigationLink(destination: ProductItemDetail(product: product)) {
-                    ProductItem(product: product)
+                    ProductItem(quickOrder: $quickOrder, product: product)
                 }
             }
 //            .buttonStyle(.plain)
             .listStyle(.plain)
             .navigationTitle("Fruit Mart")
         }
+        .popup(item: $quickOrder, style: .dimmed, content: popupMessage(product:))
         .navigationViewStyle(.stack)
+    }
+}
+
+extension Home {
+    func popupMessage(product: Product) -> some View {
+        let name = product.name.split(separator: " ").last!
+        
+        return VStack {
+            Text(name)
+                .font(.title).bold().kerning(3)
+                .foregroundColor(.peach)
+                .padding()
+            
+            OrderCompletedMessage()
+        }
     }
 }
 
