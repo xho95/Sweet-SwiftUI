@@ -12,6 +12,7 @@ struct ProductItemDetail: View {
 
     @State private var quantity = 1
     @State private var isShowingAlert = false
+    @State private var isShowingPopup = false
 
     let product: Product
     
@@ -21,7 +22,10 @@ struct ProductItemDetail: View {
 
             orderInfo
         }
-        .ignoresSafeArea(edges: .top)
+        .popup(isPresented: $isShowingPopup) {
+            OrderCompletedMessage()
+        }
+        .ignoresSafeArea(edges: .vertical)
         .alert(isPresented: $isShowingAlert) {
             confirmAlert
         }
@@ -36,24 +40,22 @@ extension ProductItemDetail {
     }
     
     var orderInfo: some View {
-        GeometryReader {
-            VStack(alignment: .leading) {
-                productDescription
-//                    .frame(width: $0.size.width)
-                
-                Spacer()
-                
-                priceInfo
-                
-                orderButton
-            }
-            .frame(height: $0.size.height)
-//            .frame(height: $0.size.height + 10)
-            .padding(32)
-            .background(.white)
-            .cornerRadius(16)
-            .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: -5)
+        VStack(alignment: .leading) {
+            productDescription              // .frame(width: $0.size.width)
+            
+            Spacer()
+            
+            priceInfo
+            
+            orderButton
         }
+        .padding(32)
+        .background(.white)
+        .cornerRadius(16)
+        .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: -5)
+        .edgesIgnoringSafeArea(.bottom)     // .frame(height: geometry.size.height)
+//        GeometryReader { geometry in
+//        }
     }
 
     var productDescription: some View {
@@ -99,10 +101,10 @@ extension ProductItemDetail {
                 .overlay(
                     Text("Order").font(.system(size: 20)).fontWeight(.medium).foregroundColor(.white)
                 )
-                .padding(.vertical, 8)
+//                .padding(.vertical, 8)
         }
         .buttonStyle(ShrinkButtonStyle())
-        .padding(.bottom, 20)
+//        .padding(.bottom, 20)
     }
     
     var confirmAlert: Alert {
@@ -130,6 +132,7 @@ extension ProductItemDetail {
     
     func placeOrder() {
         store.placeOrder(product: product, quantity: quantity)
+        isShowingPopup = true
     }
 }
 
