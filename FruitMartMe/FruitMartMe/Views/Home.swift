@@ -11,9 +11,9 @@ struct Home: View {
     @EnvironmentObject private var store: Store
 
     @State private var quickOrder: Product?
-    
+
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(store.products, id: \.name) { product in
                 NavigationLink(destination: ProductItemDetail(product: product)) {
                     ProductItem(quickOrder: $quickOrder, product: product)

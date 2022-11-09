@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct FruitMartMeApp: App {
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .foregroundColor: UIColor(named: "peach")!
+        ]
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            .foregroundColor: UIColor(named: "peach")!
+        ]
+    }
+
     var body: some Scene {
         WindowGroup {
             Home()
+                .accentColor(Color.primary)
                 .environmentObject(Store())
         }
     }
